@@ -1,0 +1,13 @@
+{{#each articles}}
+    <div class="block_card">
+        <div class="block_img">
+            <img src="{{photo}}" id="image_{{id}}" class="image">
+            {{#if isNew}}
+                <span class="badge_new">NEW</span>
+            {{/if}}
+        </div>
+        <h4 class="title_card">{{name}}</h4>
+        <p class="card_info">{{description}}</p>
+        <button class="button button_small" href="#">Read All</button>
+    </div>
+{{/each}}
